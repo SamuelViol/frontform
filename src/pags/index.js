@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
 import NHeader from '../components/NHeader'
-// import Services from '../components/Services'
+import Services from '../components/Services/index'
 import InfoSection from '../Infos'
 import { homeOne, homeTwo } from '../Infos/data'
 
@@ -12,7 +12,7 @@ const Home = () => {
         <HeroSection/>
         <InfoSection {...homeOne}/>
         <InfoSection {...homeTwo}/>
-        {/* <Services/> */}
+        <Services/>
         </>
     )
 }
