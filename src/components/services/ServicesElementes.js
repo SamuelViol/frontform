@@ -6,7 +6,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background: rgb(0,75,255);
+padding: 0 30px;
+height: 100vh;
+position: relative;
 
 @media screen and (max-width: 780px){
     height: 1100px;
@@ -23,7 +25,7 @@ grid-template-columns: 1fr 1fr 1fr;
 align-items: center;
 grid-gap: 16px;
 padding: 0 50px;
-
+z-index: 1;
 @media screen and (max-width: 1000px){
     grid-template-columns: 1fr 1fr;
 }
@@ -32,6 +34,25 @@ padding: 0 50px;
     padding: 0 20px;
 }
 `
+export const Servicebg = styled.div`
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+filter: blur(2px);
+`
+
+export const Imgbg = styled.img`
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+`
+
 export const ServicesCard = styled.div`
 background: #fff;
 display: flex;
@@ -52,7 +73,7 @@ transition: all 0.2s ease-in-out;
 }
 `
 
-export const ServicesIcon = styled.img`
+export const ServicesIcon = styled.image`
 height: 160px;
 width: 160px;
 margin-bottom: 10px;
@@ -62,6 +83,7 @@ export const ServicesH1 = styled.h1`
 font-size: 2.5rem;
 color: #fff;
 margin-bottom: 64px;
+z-index: 1;
 
 @media screen and (max-width: 480px){
     font-size: 2rem;

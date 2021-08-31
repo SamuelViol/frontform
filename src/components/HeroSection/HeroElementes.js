@@ -54,7 +54,7 @@ align-items: center;
 
 export const HeroP = styled.p`
 margin-top: 24px;
-color: white;
+color: #fff;
 font-size: 28px;
 text-align: center;
 max-width: 600px;
@@ -65,6 +65,14 @@ font-family: helvetica;
 }
 @media screen and (max-width: 480px){
     font-size: 18px;
+}
+
+transition: all 0.2s ease-in-out;
+
+&:hover{
+    transform:scale(1.01);
+    transition: all 0.2s ease-in-out;
+    color: #e3e3e3;
 }
 `
 export const HeroBtn = styled.div`

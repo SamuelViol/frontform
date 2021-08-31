@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import NHeader from '../components/NHeader'
 import Services from '../components/Services/index'
@@ -13,6 +14,7 @@ const Home = () => {
         <InfoSection {...homeOne}/>
         <InfoSection {...homeTwo}/>
         <Services/>
+        <Footer/>
         </>
     )
 }

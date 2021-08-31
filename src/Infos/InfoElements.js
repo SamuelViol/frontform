@@ -7,6 +7,14 @@ background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 @media screen and (max-width: 768px){
     padding: 100px 0;
 }
+
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+height: 100vh;
+position: relative;
+z-index: 1;
 `
 export const InfoWrapper = styled.div`
 display: grid;
@@ -18,6 +26,24 @@ margin-right: auto;
 margin-left: auto;
 padding: 0 24px;
 justify-content: center;
+`
+export const Infobg = styled.div`
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+filter: blur(2px);
+`
+
+export const Imgbg = styled.img`
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
 `
 
 export const InfoRow = styled.div`
@@ -49,7 +75,7 @@ padding-bottom: 60px;
 `
 
 export const TopLine = styled.p`
-color: #01bf71;
+color: #1a24eb;
 font-size: 16px;
 line-height: 16px;
 font-weight: 700;
@@ -75,6 +101,8 @@ export const Subtitle = styled.p`
 max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px;
+font-family: Helvetica;
+border-radius: 10px; 
 line-height: 24px;
 color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
