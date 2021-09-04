@@ -1,7 +1,7 @@
 
 export const homeOne = {
     id: 'sobre',
-    lightBg: false,
+    lightBg: true,
     lightText: false,
     lightTextDesc: false,
     darkText: true,

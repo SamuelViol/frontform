@@ -7,11 +7,11 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dark
     if (id == 'sobre') {
         return (
             <>
-                {/* <InfoContainer lightBg={lightBg} id={id}> */}
-                <InfoContainer id={id}>
-                    <Infobg>
+                <InfoContainer lightBg={lightBg} id={id}>
+                {/* <InfoContainer id={id}> */}
+                    {/* <Infobg>
                         <Imgbg src={imagem} />
-                    </Infobg>
+                    </Infobg> */}
                     <InfoWrapper>
                         <InfoRow imgStart={imgStart}>
                             <Column1>
