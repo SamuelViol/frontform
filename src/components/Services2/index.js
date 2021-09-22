@@ -1,113 +1,153 @@
 import React from 'react'
 import { CardGroup, Card, Button, Row, Col, Container, CardDeck } from 'react-bootstrap'
-import { Styles } from './Services2Elements'
+import { Styles, ServicesH1, Imgbg, Servicebg, ServicesWrapper, ServiceContainer } from './Services2Elements'
+
+import { IconContext } from 'react-icons/lib'
+import { CgFileDocument } from 'react-icons/cg'
+import { IoDocumentsSharp, IoPricetagsOutline } from 'react-icons/io5'
+import { FaCashRegister, FaBoxes, FaUserPlus, FaTruck } from 'react-icons/fa'
+import { RiBankLine } from 'react-icons/ri'
+import { GrDeliver } from 'react-icons/gr'
 
 const Services2 = () => {
     return (
-        <Styles>
-            <Container>
+        <>
+            <ServiceContainer id="services">
+            <ServicesH1>Serviços</ServicesH1>
+                <ServicesWrapper>
+                <Styles>
+                <CardGroup>
                     <Row>
                         <Col>
-                            <Card border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>Header</Card.Header>
+                            <Card>
+                                <IconContext.Provider value={{ className: 'react-icons' }}>
+                                    <div>
+                                        <CgFileDocument />
+                                    </div>
+                                </IconContext.Provider>
                                 <Card.Body>
-                                    <Card.Title>Primary Card Title</Card.Title>
+                                    <Card.Title>NFe e NFCe</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.
+                                        Controle completo para entrada e emissão de notas fiscais
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
-                            <Card border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>Header</Card.Header>
+                            <Card>
+                                <IconContext.Provider value={{ className: 'react-icons' }}>
+                                    <div>
+                                        <IoDocumentsSharp />
+                                    </div>
+                                </IconContext.Provider>
                                 <Card.Body>
-                                    <Card.Title>Primary Card Title</Card.Title>
+                                    <Card.Title>Relatórios</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.
+                                        Relatórios completos e personalizados
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
-                            <Card border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>Header</Card.Header>
+                            <Card>
+                                <IconContext.Provider value={{ className: 'react-icons' }}>
+                                    <div>
+                                        <FaCashRegister />
+                                    </div>
+                                </IconContext.Provider>
                                 <Card.Body>
-                                    <Card.Title>Primary Card Title</Card.Title>
+                                    <Card.Title>Caixa</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.
+                                        Controle completo para que seu caixa se mantenha correto
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
-                            <Card border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>Header</Card.Header>
+                            <Card>
+                            <IconContext.Provider value={{ className: 'react-icons' }}>
+                                    <div>
+                                        <IoPricetagsOutline />
+                                    </div>
+                                </IconContext.Provider>
                                 <Card.Body>
-                                    <Card.Title>Primary Card Title</Card.Title>
+                                    <Card.Title>Vendas</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.
+                                        Faça vendas de maneira rápida e ágil
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                     </Row>
-                <Row>
+
+                    <Row>
                         <Col>
-                            <Card border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>Header</Card.Header>
+                            <Card>
+                            <IconContext.Provider value={{ className: 'react-icons' }}>
+                                    <div>
+                                        <RiBankLine />
+                                    </div>
+                                </IconContext.Provider>
                                 <Card.Body>
-                                    <Card.Title>Primary Card Title</Card.Title>
+                                    <Card.Title>Financeiro</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.
+                                        Controle toda a parte financeira de sua empresa
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
-                            <Card border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>Header</Card.Header>
+                            <Card>
+                            <IconContext.Provider value={{ className: 'react-icons' }}>
+                                    <div>
+                                        <FaBoxes />
+                                    </div>
+                                </IconContext.Provider>
                                 <Card.Body>
-                                    <Card.Title>Primary Card Title</Card.Title>
+                                    <Card.Title>Estoque</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.
+                                        Mantenha seu estoque sempre correto
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
-                            <Card border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>Header</Card.Header>
+                            <Card>
+                            <IconContext.Provider value={{ className: 'react-icons' }}>
+                                    <div>
+                                        <FaTruck />
+                                    </div>
+                                </IconContext.Provider>
                                 <Card.Body>
-                                    <Card.Title>Primary Card Title</Card.Title>
+                                    <Card.Title>Entregas</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.
+                                        Sistema para controle de entregas
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col>
-                            <Card border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>Header</Card.Header>
+                            <Card>
+                            <IconContext.Provider value={{ className: 'react-icons' }}>
+                                    <div>
+                                        <FaUserPlus />
+                                    </div>
+                                </IconContext.Provider>
                                 <Card.Body>
-                                    <Card.Title>Primary Card Title</Card.Title>
+                                    <Card.Title>E muito mais</Card.Title>
                                     <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.
+                                        Entre em contato e conheça todas as nossas funcionalidades
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                     </Row>
-            </Container >
-        </Styles>
+                </CardGroup>
+                </Styles>
+                </ServicesWrapper>
+            </ServiceContainer>
+        
+        </>
     )
 }
 
