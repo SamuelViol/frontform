@@ -7,7 +7,6 @@ import { CgFileDocument } from 'react-icons/cg'
 import { IoDocumentsSharp, IoPricetagsOutline } from 'react-icons/io5'
 import { FaCashRegister, FaBoxes, FaUserPlus, FaTruck } from 'react-icons/fa'
 import { RiBankLine } from 'react-icons/ri'
-import { GrDeliver } from 'react-icons/gr'
 
 const Services2 = () => {
     return (
@@ -146,7 +145,6 @@ const Services2 = () => {
                 </Styles>
                 </ServicesWrapper>
             </ServiceContainer>
-        
         </>
     )
 }

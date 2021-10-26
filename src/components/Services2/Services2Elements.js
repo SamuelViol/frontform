@@ -18,6 +18,12 @@ export const Styles = styled.div`
 .h5{
   color: #1a24eb;
   margin-bottom: 0px;
+  @media screen and (max-width: 1366px){
+    font-size: 15px;
+}
+@media screen and (max-width: 1024px){
+    font-size: 15px;
+}  
 }
 .row{
   margin-top: 0.5rem;
@@ -37,6 +43,9 @@ export const Styles = styled.div`
   @media screen and (max-width: 1366px){
     font-size: 35px;
 }
+@media screen and (max-width: 1024px){
+    font-size: 32px;
+}
 }
 `
 export const ServiceContainer = styled.div`
@@ -54,7 +63,8 @@ export const ServicesH1 = styled.h1`
 font-size: 3.5rem;
 color: 'black';
 font-weight: bold;
-margin-bottom: 84px;
+margin-top: 10rem;
+/* margin-bottom: 54px; */
 font-family: Futara;
 z-index: 1;
 transition: all 0.1s ease-in-out;
@@ -63,17 +73,30 @@ transition: all 0.1s ease-in-out;
     font-size: 2rem;
 }
 `
+
 export const ServicesWrapper = styled.div`
-/* display: grid; */
-z-index: 1;
-height: 100vh;
-width: 100%;
-max-width: 1100px;
-margin-right: auto;
-margin-left: auto;
-padding: 0 24px;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
 `
+
+// export const ServicesWrapper = styled.div`
+// /* display: grid; */
+// z-index: 1;
+// height: 100vh;
+// width: 100%;
+// max-width: 1100px;
+// margin-right: auto;
+// margin-left: auto;
+// padding: 0 24px;
+// justify-content: center;
+// `
 // export const ServicesWrapper = styled.div`
 // display: grid;
 // z-index: 1;

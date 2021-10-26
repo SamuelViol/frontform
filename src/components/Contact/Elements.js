@@ -31,11 +31,12 @@ export const ContWrapper = styled.div`
 `
 export const ContForm = styled.form`
 /* background-color: blueviolet; */
-height: 30rem;
+height: 20rem;
 width: 100%;
 max-width: 700px;
 margin-right: auto;
 margin-left: auto;
+margin-bottom: 30rem;
 text-align: center;
 box-sizing: border-box;
 border: 2px solid;

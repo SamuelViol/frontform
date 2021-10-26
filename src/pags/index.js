@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection'
 import NHeader from '../components/NHeader'
 
 import Services2 from '../components/Services2/index'
+import Teste from '../components/teste'
 import InfoSection from '../Infos'
 import { homeOne, homeTwo } from '../Infos/data'
 
@@ -16,8 +17,10 @@ const Home = () => {
         <InfoSection {...homeOne}/>
         <InfoSection {...homeTwo}/>
         <Services2/>
-        <Contact/>
+        {/* <Contact/> */}
+        <Teste/>
         <Footer/>
+        
         </>
     )
 }

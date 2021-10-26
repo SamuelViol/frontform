@@ -13,7 +13,8 @@ export const homeOne = {
     alt: 'Imagem',
     dark: true,
     primary: true,
-    buttonText: 'Conheça'
+    buttonText: 'Conheça',
+    to: 'descubra'
 }
 
 export const homeTwo = {
@@ -22,13 +23,14 @@ export const homeTwo = {
     lightText: false,
     lightTextDesc: false,
     darkText: true,
-    topLine: 'Agilidade',
-    headline: 'Nossa meta é agilizar o seu serviço',
-    description: 'Nosso sistema automatiza o seu negócio, poupando o seu tempo ao te proporcionar diversas ferramentas e relatórios que facilitam a sua gerência',
+    topLine: 'Para todos',
+    headline: 'Nosso sistema é diversificado',
+    description: 'Atendemos de super mercados a oficinas mecânicas, através de modulos que se encaixam para o melhor controle e funcionamento de seu negócio.',
     imgStart: true,
     img: require('../images/imagem2.svg').default,
     alt: 'Imagem2',
     dark: true,
     primary: true,
-    buttonText: 'Conheça'
+    buttonText: 'Nossos Serviços',
+    to: 'services'
 }

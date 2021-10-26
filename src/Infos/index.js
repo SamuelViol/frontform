@@ -3,7 +3,7 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Hea
 import { ButtonInfo } from '../components/ButtonInfo'
 import imagem from '../images/imagem9.jpg'
 
-const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, buttonText, description, img, alt, primary, dark }) => {
+const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, buttonText, description, img, alt, primary, dark, to }) => {
     if (id == 'sobre') {
         return (
             <>
@@ -20,7 +20,7 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headline, dark
                                     <Heading lightText={lightText}>{headline}</Heading>
                                     <Subtitle darkText={darkText}>{description}</Subtitle>
                                     <BtnWrap>
-                                        <ButtonInfo to='home'
+                                        <ButtonInfo to={to}
                                             smooth={true}
                                             duration={500}
                                             spy={true}
